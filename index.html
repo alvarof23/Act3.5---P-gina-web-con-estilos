@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="imagenes/logo.jpg" alt="Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Sobre nosotros</a></li>
+        <li><a href="contacto.html">Contacta</a></li>
+      </ul>
+      <div class="search">
+        <input type="text" placeholder="Buscar...">
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <h1>Bohnes</h1>
+    <section class="carousel">
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="imagenes/inicio.jpg">
+          <h2>Bienvenidos a nuestra página web.</h2>
+        </div>
+        <div class="mySlides">
+          <img src="imagenes/foto1.png">
+          <h2>Explora más sobre nosotros.</h2>
+        </div>
+        <div class="mySlides">
+          <img src="imagenes/foto2.png">
+          <h2>Síguenos en nuestras redes sociales.</h2>
+        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </section>
+
+    <section class="links">
+      <h3>Enlaces de interés</h3>
+      <a href="https://www.instagram.com/bohnes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+      <a href="https://open.spotify.com/intl-es/artist/4aN7T7NNFFMRJgVbRPne8q?si=yM1odjJ2QzyVCsweulLRTA">Spotify</a>
+      <a href="https://www.youtube.com/@Bohnes">Web Similar 3</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    let slideIndex = 1;
+    showSlides();
+
+    function plusSlides(n) {
+      slideIndex += n;
+      showSlides();
+    }
+
+    function showSlides() {
+      const slides = document.getElementsByClassName("mySlides");
+      if (slideIndex > slides.length) slideIndex = 1;
+      if (slideIndex < 1) slideIndex = slides.length;
+      for (let slide of slides) slide.style.display = "none";
+      slides[slideIndex-1].style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
