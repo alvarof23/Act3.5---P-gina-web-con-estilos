@@ -2,8 +2,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
-
+.contacto {
+  min-height: 688px;
+}
 /* Header */
 header {
   background-color: #333;
@@ -23,7 +26,7 @@ nav {
 }
 
 nav .logo img {
-  height: 50px; /* Ajusta el tamaño del logo */
+  height: 50px;
 }
 
 .nav-links {
@@ -34,28 +37,26 @@ nav .logo img {
 }
 
 .nav-links li {
-  margin-left: 20px; /* Espacio entre los elementos */
+  margin-left: 20px;
 }
 
 .nav-links li a {
   color: white;
   text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
 }
 
 .nav-links li a:hover {
-  background-color: rgba(255, 255, 255, 0.3); /* Cambio de color al pasar el ratón */
-  transform: scale(1.1); /* Efecto de aumentar el tamaño */
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .search {
-  margin-left: auto; /* Esto asegura que el cuadro de búsqueda se alinee a la derecha */
+  margin-left: auto;
 }
 
 .search input[type="text"] {
   padding: 5px;
   border-radius: 5px;
-  width: 200px; /* Tamaño del cuadro de búsqueda */
+  width: 200px;
   border: 1px solid #ccc;
 }
 
@@ -64,11 +65,11 @@ footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 20px; /* Añadir más espacio */
+  padding: 20px;
 }
 
 footer p {
-  margin: 0; /* Elimina el margen por defecto */
+  margin: 0;
 }
 
 /* Títulos */
@@ -86,6 +87,8 @@ h3 {
   margin-bottom: 10px;
 }
 
+
+/* Index.html */
 /* Carrusel */
 .carousel { 
   position: relative; 
@@ -102,9 +105,9 @@ h3 {
 
 img { 
   width: 100%; 
-  height: 500px; /* Establecer una altura fija para todas las imágenes */
-  object-fit: cover; /* Asegura que las imágenes se ajusten sin distorsión */
-  transition: opacity 1s ease-in-out; /* Transición suave para las imágenes */
+  height: 500px;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
 }
 
 /* Botones del carrusel */
@@ -115,8 +118,8 @@ img {
   font-size: 18px; 
   color: white; 
   cursor: pointer; 
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para los botones */
-  border-radius: 50%; /* Botones circulares */
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
   transition: background-color 0.3s ease;
 }
 
@@ -129,12 +132,12 @@ img {
 }
 
 .prev:hover, .next:hover { 
-  background-color: rgba(0, 0, 0, 0.8); /* Efecto al pasar el ratón */
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Links */
 .links {
-  text-align: center; /* Centra los elementos dentro del contenedor */
+  text-align: center;
   margin-top: 50px;
 }
 
@@ -160,7 +163,7 @@ img {
   background-color: #45a049;
 }
 
-/* Contacta.html */
+/* Contacto.html */
 .contact-form {
   width: 80%;
   max-width: 600px;
@@ -196,7 +199,6 @@ img {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
@@ -220,18 +222,7 @@ img {
   text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* nosotros.html */
 /* Sección multimedia */
 .multimedia {
   text-align: center;
